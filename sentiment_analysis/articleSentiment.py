@@ -5,10 +5,15 @@ from textblob import TextBlob
 from django.shortcuts import render
 
 
+#creating class for sentiment analysis of articles/ news
 class articleSentiment():
+
+    #initializing the class
     def __init__(self, url):
         self.url = url
+    # fetching the article
         self.article = Article(url)
+    
         self.article.download()
         self.article.parse()
         self.article.nlp()
@@ -16,10 +21,11 @@ class articleSentiment():
         self.obj = TextBlob(self.text)
         self.sentiment = self.obj.sentiment.polarity
         print(self.sentiment)
-        
+
+       #generating summary of the article or news
     def generateSummary(self):
         return self.article.summary
-        
+       #prediction of the sentiment of the article/news 
     def predict(self):
         if self.sentiment == 0:
             prediction1 = "Neutral"

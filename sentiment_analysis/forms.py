@@ -1,5 +1,6 @@
 from django import forms
 
+
 class Sentiment_Typed_Tweet_analyse_form(forms.Form):
     sentiment_typed_tweet = forms.CharField(initial='nothing')
 

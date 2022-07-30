@@ -1,7 +1,62 @@
 
 body{
-    background-image: linear-gradient(to bottom, rgba(26, 23, 23, 0.6) 0%,rgba(22, 19, 19, 0.6) 100%),
-     url('twitter_back.jpg');
+    background-image: linear-gradient(to bottom, rgba(68, 65, 65, 0.6) 0%,rgba(53, 51, 51, 0.6) 100%),
+     url('tp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height:device-height;
+    width:device-width;
 }
+/*
+making table data white
+*/
+
+td{
+    color:white;
+}
+
+h1{
+    color:white;
+}
+
+h2{
+    color:white;
+}
+
+/*
+*making table rows and column look like a table
+*/
+
+
+table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:350px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+
+

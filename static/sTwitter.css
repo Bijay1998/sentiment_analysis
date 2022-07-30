@@ -1,0 +1,46 @@
+/*
+setting background image its width and height
+
+*/
+
+body{
+    background-image: linear-gradient(to bottom, rgba(26, 23, 23, 0.6) 0%,rgba(22, 19, 19, 0.6) 100%),
+     url('tp.jpg');
+    background-size: cover;
+    height: device-height;
+    width: device-width;   
+    background-repeat: no-repeat;
+
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.a-field__label{
+    color: white;
+}
+
+#sentiment_imported_tweet{
+    margin-top: 10px;
+    width: 40%;
+}
+
+/*
+*changing the color and position of submit button
+
+*/
+
+#submit{
+    background-color: #3a9aee;
+    color: white;
+    margin-top: 30px;
+}
+
+
+
+

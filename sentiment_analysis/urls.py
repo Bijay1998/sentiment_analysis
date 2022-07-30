@@ -34,9 +34,9 @@ urlpatterns = [
     path('urlResult/', views.urlResult, name='urlResult'),
     path(('contact/'), views.contact, name='contact'),
     path(('feature/'), views.feature, name='feature'),  
-    path(('sentiment_import/'), views.sentiment_import, name='sentiment_import'),
-    path(('sentiment_import_result/'), views.sentiment_import_result, name='sentiment_import_result'),
-    path(('sentiment_import_result_hashtag/'), views.sentiment_import_result_hashtag, name='sentiment_import_result_hashtag'),
+    
+    path(('twitter_result/'), views.twitter_result, name='twitter_result'),
+    path(('twitter_result_hashtag/'), views.twitter_result_hashtag, name='twitter_result_hashtag'),
     
    
     
